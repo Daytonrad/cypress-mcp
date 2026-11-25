@@ -1,0 +1,20 @@
+name: Verify Kiro contribution on Linux
+on:
+  push:
+    branches: [verify/kiro-linux]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run typecheck && npm run lint && npm run format:check
+      - run: npm run build
+      - run: npm test
+      - run: node bin/cypress-mcp.mjs init --client kiro --dry-run --cwd test/e2e/project
