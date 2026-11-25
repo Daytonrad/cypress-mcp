@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `cypress-mcp init` detects Kiro projects and can write their workspace MCP configuration.
+
 ## 0.5.1 (2026-11-24)
 
 New home on GitHub, the last unfenced Cypress text fenced, and a repo that is easier to contribute to.
