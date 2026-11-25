@@ -265,8 +265,7 @@ The link carries no `--cwd`: if `cypress_doctor` does not find your project, add
 
 Run `npx cypress-mcp init --client kiro` from the Cypress project root. This writes the `cypress` server entry under `mcpServers` in `.kiro/settings/mcp.json`. The generated `--cwd` argument is an absolute path to your checkout.
 
-Kiro CLI documents a `timeout` field for connection startup. The shared workspace entry uses Kiro’s defaults. [Kiro MCP configuration](https://kiro.dev/docs/mcp/configuration/)
-
+Kiro CLI documents a `timeout` field for connection startup. The shared workspace entry uses Kiro's defaults. [Kiro MCP configuration](https://kiro.dev/docs/mcp/configuration/)
 
 ### Windsurf (Devin Desktop)
 

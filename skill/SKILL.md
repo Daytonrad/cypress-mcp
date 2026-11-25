@@ -36,8 +36,6 @@ metadata:
 
 # Cypress testing with cypress-mcp
 
-For a Kiro project, run `npx cypress-mcp init --client kiro` in the project root to register the server in `.kiro/settings/mcp.json`.
-
 cypress-mcp runs the project's own Cypress and gives back a short result: per failure the `file:line`, the error, the screenshot and what the page showed when it failed, plus a `runId`. The server sends these five lines as its instructions:
 
 ```text
