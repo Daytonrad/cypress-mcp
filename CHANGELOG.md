@@ -3,6 +3,11 @@
 ## Unreleased
 
 - `cypress-mcp init` detects Kiro projects and can write their workspace MCP configuration.
+## 0.5.3 (2026-11-25)
+
+### Fixes
+
+- On Cypress 16.4 and later, `reporter: "junit"` or `"teamcity"` writes its files in cypress-mcp runs again once the project has `mocha-junit-reporter` or `mocha-teamcity-reporter` in its devDependencies. Cypress 16.4 no longer lets other reporters load its built-in copy. Without the package, the run's note says which one to add.
 
 ## 0.5.2 (2026-11-25)
 
